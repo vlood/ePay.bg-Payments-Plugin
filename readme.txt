@@ -32,8 +32,14 @@ The plugin supports localization and has about 4-5 strings, so it will be pretty
 = TODO =
 * Rethink the invoice id thingy (currently giving a random 10-digit number);
 * Make a flag arg for demo/live payment gateway (currently there is an arguement for the gateway url);
+* Validation of the arguements (none currently);
+* Set default values (some of the args shouldn't be required);
 
 Any ideas for additional features are welcome!
+
+= GitHub Repo =
+
+Here it is: https://github.com/vlood/ePay.bg-Payments-Plugin
 
 == Installation ==
 

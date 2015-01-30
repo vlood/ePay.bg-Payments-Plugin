@@ -1,12 +1,13 @@
 <?php
 /**
  * Plugin Name: EPay.bg Payments
- * Plugin URI: https://github.com/vlood/epay-payments
  * Description: A shortcode for sending payments for a product or service, using epay.bg service.
  * Author: vloo
- * Author URI: https://github.com/vloo
+ * Author URI: https://github.com/vlood
  * Version: 0.1
- * Plugin URI: https://github.com/vloo/epay-payments
+ * Plugin URI: https://github.com/vlood/epay-payments
+ * Text Domain: epaybg-payments
+ * License: GPL2
  */
  
 /*  Copyright 2015  Vladimir Vassilev  (email : vlood.vassilev@gmail.com)
@@ -31,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 add_action('plugins_loaded', 'epay_payments_init');
 function epay_payments_init() {
-	load_plugin_textdomain('epaybg-payments', false, dirname( plugin_basename( __FILE__ ) ));
+	load_plugin_textdomain('epaybg-payments', false, basename( dirname( __FILE__ ) ) . '/languages');
 }
 
 function epay_hmac($algo,$data,$passwd){
